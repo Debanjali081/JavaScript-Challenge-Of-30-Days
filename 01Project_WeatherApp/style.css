@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(92, 195, 235), rgb(239, 162, 18));
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 4rem 3rem; /* Increased padding */
+    background-color: rgb(54, 52, 52);
+    color: white;
+    max-width: 80%; /* Increased max-width for larger screens */
+    width: 100%;
+    max-width: 800px; /* Increased maximum width */
+}
+
+.container h1 {
+    padding: 10px;
+    font-size: 2.5rem; /* Slightly increased font size */
+    letter-spacing: 2px;
+    color: white;
+}
+
+.container h1 span {
+    color: orange;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    padding: 15px; /* Increased padding */
+    outline: none;
+    margin-bottom: 1.5rem; /* Increased margin-bottom */
+    width: 100%;
+    background-color: orange;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Increased font size */
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+form button {
+    padding: 15px; /* Increased padding */
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Increased font size */
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    width: 100%;
+    max-width: 250px; /* Increased max-width */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 3rem 2rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    form input, form button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    form input, form button {
+        font-size: 0.9rem;
+    }
+}
