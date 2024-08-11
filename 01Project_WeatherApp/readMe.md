@@ -1,4 +1,5 @@
 <h1>SkyGazer</h1>
+<P>This is a weather App</p>
 <p>This App Is Made Up of HTML , CSS, and JavaScript</p>
 <h2>Features:</h2>
 <p> --> It will show the temprature , Humidity , City Name and Wind Speed</p>
