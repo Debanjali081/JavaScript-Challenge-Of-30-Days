@@ -9,23 +9,66 @@
 </head>
 
 <body>
-   
+    <h1>SkyGazer</h1>
     <div class="container">
-        <img src="cld1.png" alt="">
-        <h1>Weather <span> App</span></h1>
-        <form>
-            <!-- Input for entering the city name -->
-            <input type="text" placeholder="Enter Your Location" required>
-            <!-- Button to trigger the weather fetch -->
-            <button type="submit">Get The Weather</button>
-        </form>
-        <!-- Divs to display the weather information -->
-        <div id="tempr"></div>
-        <div id="humidity"></div>
-        <div id="cityName"></div>
+        <div class="weather-input">
+            <h3>Enter a City Name</h3>
+            <input type="text" class="city-input" placeholder="e.g India, Odisha , Bhubaneswar">
+            <button class="search-btn">Search</button>
+            <div class="separation"></div>
+            <button class="location-btn">Use Current Location</button>
+        </div>
+        <div class="weather-data">
+            <div class="current-weather">
+                <div class="details">
+                    <h2>___________ (_______)</h2>
+                    <h4>Temperature: __ºC</h4>
+                    <h4>Wind: ____ M/S</h4>
+                    <h4>Humidity: ___%</h4>
+                </div>
+            
+
+            </div>
+            <div class="days-forecast">
+                <h2>5-Day Forecast</h2>
+                <ul class="weather-cards">
+                    <li class="card">
+                        <h3>(___________)</h3>
+                        <h4>Temperature: __ºC</h4>
+                        <h4>Wind: ____ M/S</h4>
+                        <h4>Humidity: ___%</h4>
+                    </li>
+                    <li class="card">
+                        <h3>(___________)</h3>
+                        <h4>Temperature: __ºC</h4>
+                        <h4>Wind: ____ M/S</h4>
+                        <h4>Humidity: ___%</h4>
+                    </li>
+                    <li class="card">
+                        <h3>(___________)</h3>
+                        <h4>Temperature: __ºC</h4>
+                        <h4>Wind: ____ M/S</h4>
+                        <h4>Humidity: ___%</h4>
+                    </li>
+                    <li class="card">
+                        <h3>(___________)</h3>
+                        <h4>Temperature: __ºC</h4>
+                        <h4>Wind: ____ M/S</h4>
+                        <h4>Humidity: ___%</h4>
+                    </li>
+                    <li class="card">
+                        <h3>(___________)</h3>
+                        <h4>Temperature: __ºC</h4>
+                        <h4>Wind: ____ M/S</h4>
+                        <h4>Humidity: ___%</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
     </div>
-    <!-- Linking the JavaScript file -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
