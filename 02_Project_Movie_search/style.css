@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: orange;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar-brand span {
+    color: blue;
+}
+
+.nav-link {
+    color: #333;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa;
+}
+
+.dropdown-item {
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+.container1 {
+    background-image: url(bgImg2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.container1 h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 6rem 7rem;
+}
+
+.container1 h1 span {
+    color: orange;
+}
+
+.btns {
+    margin-top: 0.5rem;
+}
+
+.btn-log,
+.btn-sign {
+    margin: 0 0.5rem;
+    padding: 0.4rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 400;
+}
+
+.btn-log {
+    background-color: orange;
+    color: black;
+}
+
+.btn-sign {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-log:hover {
+    border: 1px solid orange;
+    color: white;
+    background: transparent;
+    transition: 1s;
+}
+
+.btn-sign:hover {
+    border: 1px solid black;
+    background: orange;
+    transition: 1s;
+}
+
+.container2 {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    margin: 3rem;
+    text-align: center;
+}
+
+.container2 h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.container2 h1 span {
+    color: orange;
+}
+
+.container2 .btn {
+    background-color: orange;
+    color: #fff;
+}
+
+.container2 .btn:hover {
+    border: 1px solid orange;
+    background: transparent;
+    color: black;
+    transition: 1s;
+    margin: 1rem;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px; /* Ensure grid is centered within the container */
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    width: 100%; /* Ensures consistent card size */
+}
+
+.card img {
+    width: 100%;
+    height: 350px; /* Fixes the height to ensure all images are uniform */
+    object-fit: cover; /* Ensures the image covers the entire area without distorting */
+}
+
+.dtls {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: orange;
+    border-radius: 1rem;
+}
+
+.dtls h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+
