@@ -1,9 +1,11 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Nunito Sans', 'sans-serif';
 }
 
@@ -16,12 +18,19 @@ h1 {
     padding: 18px 0;
     text-align: center;
     font-size: 1.75rem;
+    background: -webkit-gradient(linear, left top, right top, from(skyblue), to(rgb(8, 73, 86)));
+    background: -o-linear-gradient(left, skyblue, rgb(8, 73, 86));
     background: linear-gradient(to right, skyblue, rgb(8, 73, 86));
 }
 
 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 35px;
     padding: 30px;
 
@@ -48,9 +57,15 @@ h1 {
     width: 100%;
     background-color: rgb(25, 25, 76);
     margin: 25px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .weather-input .separation::before {
@@ -86,12 +101,16 @@ h1 {
 }
 
 .current-weather {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: black;
     border-radius: 5px;
     padding: 20px 70px 20px 20px;
     background: rgb(10, 120, 142);
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .current-weather h2 {
@@ -121,6 +140,8 @@ h1 {
 }
 
 .weather-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
 }
@@ -145,7 +166,8 @@ h1 {
     }
 
     .weather-cards {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .weather-cards .card {
@@ -165,7 +187,8 @@ h1 {
 
 @media(max-width:750px) {
     .container {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         padding: 15px;
     }
 
